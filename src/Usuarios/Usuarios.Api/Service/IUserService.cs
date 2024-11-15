@@ -6,8 +6,8 @@ namespace Usuarios.Api.Service;
 
 public interface IUserService
 {
-    Task<UserModel> GetUserById(Guid id);
-    Task<UserModel> CreateUser(UserModel user);
-    Task<UserModel> UpdateUser(UserModel user);
-    Task<bool> DeleteUser(Guid id);        
+    Task<UserModel?> GetUserByIdAsync(Guid id);
+    Task<UserModel> CreateUserAsync(UserModel user);
+    Task<UserModel?> UpdateUserAsync(Guid id, UserModel user);
+    Task<bool> DeleteUserAsync(Guid id);        
 }        

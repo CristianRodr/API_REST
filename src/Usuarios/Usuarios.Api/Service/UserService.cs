@@ -5,25 +5,23 @@ namespace Usuarios.Api.Service;
 public class UserService : IUserService
 {
     private readonly Dictionary<Guid, UserModel> _users = new();
-    public Task<UserModel> CreateUser(UserModel user)
+    public Task<UserModel> CreateUserAsync(UserModel user)
     {
         user.Id = Guid.NewGuid();
         _users[user.Id] = user;
         return Task.FromResult(user);
     }
 
-    public Task<bool> DeleteUser(Guid id)
-    {
-        throw new NotImplementedException();
-    }
+    public Task<bool> DeleteUserAsync(Guid id) => Task.FromResult(_users.Remove(id));  
 
-    public Task<UserModel> GetUserById(Guid id)
-    {
-        throw new NotImplementedException();
-    }
+    public Task<UserModel?> GetUserByIdAsync(Guid id) => 
+        Task.FromResult(_users.ContainsKey(id) ?  _users[id] : null);    
 
-    public Task<UserModel> UpdateUser(UserModel user)
+    public Task<UserModel?> UpdateUserAsync(Guid id, UserModel user)
     {
-        throw new NotImplementedException();
+        if (!_users.ContainsKey(user.Id)) return Task.FromResult<UserModel?>(null);
+        user.Id = id;
+        _users[user.Id] = user;
+        return Task.FromResult<UserModel?>(user);
     }
 }        
