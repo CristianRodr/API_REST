@@ -31,3 +31,4 @@ C:\Users\an1me\Desarrollo\API_REST\src\Usuarios\Usuarios.Api\obj\Debug\net8.0\re
 C:\Users\an1me\Desarrollo\API_REST\src\Usuarios\Usuarios.Api\obj\Debug\net8.0\Usuarios.Api.pdb
 C:\Users\an1me\Desarrollo\API_REST\src\Usuarios\Usuarios.Api\obj\Debug\net8.0\Usuarios.Api.genruntimeconfig.cache
 C:\Users\an1me\Desarrollo\API_REST\src\Usuarios\Usuarios.Api\obj\Debug\net8.0\ref\Usuarios.Api.dll
+C:\Users\an1me\Desarrollo\API_REST\src\Usuarios\Usuarios.Api\obj\Debug\net8.0\Usuarios.Api.sourcelink.json
