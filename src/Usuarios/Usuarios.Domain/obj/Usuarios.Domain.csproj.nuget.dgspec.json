@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Api\\Usuarios.Api.csproj": {}
+    "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Domain\\Usuarios.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Api\\Usuarios.Api.csproj": {
+    "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Domain\\Usuarios.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Api\\Usuarios.Api.csproj",
-        "projectName": "Usuarios.Api",
-        "projectPath": "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Api\\Usuarios.Api.csproj",
+        "projectUniqueName": "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Domain\\Usuarios.Domain.csproj",
+        "projectName": "Usuarios.Domain",
+        "projectPath": "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Domain\\Usuarios.Domain.csproj",
         "packagesPath": "C:\\Users\\an1me\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Api\\obj\\",
+        "outputPath": "C:\\Users\\an1me\\Desarrollo\\API_REST\\src\\Usuarios\\Usuarios.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "UsingMicrosoftNETSdk": false,
         "configFilePaths": [
@@ -47,13 +47,9 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "MediatR.Contracts": {
               "target": "Package",
-              "version": "[8.0.6, )"
-            },
-            "Swashbuckle.AspNetCore": {
-              "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[2.0.1, )"
             }
           },
           "imports": [
@@ -68,9 +64,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
